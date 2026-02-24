@@ -1,0 +1,19 @@
+# Backend
+backend/vendor/
+backend/.env
+backend/*.sqlite
+backend/*.sqlite-journal
+backend/node_modules/
+backend/storage/*.key
+backend/storage/framework/cache/data/*
+backend/storage/framework/sessions/*
+backend/storage/framework/views/*
+
+# Frontend
+frontend/node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+.env
+.phpunit.result.cache
