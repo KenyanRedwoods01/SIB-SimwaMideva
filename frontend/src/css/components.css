@@ -1,0 +1,124 @@
+/* Components CSS - Fourfront Management */
+
+/* Navbar */
+.navbar {
+    background-color: #333 !important;
+}
+
+.navbar-brand {
+    font-size: 1.2rem;
+}
+
+/* Custom Select */
+.custom-select-wrapper {
+    position: relative;
+    user-select: none;
+}
+
+.custom-select {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-select-trigger {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #666;
+    line-height: 50px;
+    background: #fff;
+    border-radius: 10px;
+    border: 2px solid #e0e0e0;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.custom-select-trigger:hover {
+    border-color: #d4a853;
+}
+
+.custom-options {
+    position: absolute;
+    display: block;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    background: #fff;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-15px);
+    z-index: 5;
+}
+
+.custom-options.open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+    transform: translateY(5px);
+}
+
+.custom-option {
+    position: relative;
+    display: block;
+    padding: 0 20px;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #333;
+    line-height: 50px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.custom-option:hover {
+    background: #f8f8f8;
+    color: #d4a853;
+}
+
+.custom-option.selected {
+    background: #f8f8f8;
+    color: #d4a853;
+}
+
+.option-color {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.foundation-dot { background: #d4a853; }
+.economy-dot { background: #6b8cae; }
+
+/* Modals */
+.modal-content {
+    border-radius: 1.5rem;
+    border: none;
+}
+
+.modal-header {
+    background: #333;
+    color: white;
+    border-bottom: none;
+}
+
+.btn-submit {
+    background-color: #333;
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.btn-submit:hover {
+    background-color: #444;
+    color: white;
+}

@@ -1,0 +1,429 @@
+/* Responsive CSS - Mobile, Tablet, and Desktop Breakpoints */
+
+/* Extra Small Devices (Mobile) - Below 576px */
+@media (max-width: 575.98px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .profile-header {
+        height: 250px;
+    }
+
+    .profile-avatar {
+        width: 60px;
+        height: 60px;
+    }
+
+    .profile-name {
+        font-size: 22px;
+    }
+
+    .profile-message {
+        font-size: 12px;
+    }
+
+    .stat-card {
+        padding: 15px;
+    }
+
+    .stat-avatar {
+        width: 40px;
+        height: 40px;
+    }
+
+    .stat-name {
+        font-size: 12px;
+    }
+
+    .stat-value {
+        font-size: 20px;
+    }
+
+    .motivation-card {
+        padding: 20px;
+    }
+
+    .motivation-card h3 {
+        font-size: 18px;
+    }
+
+    .motivation-card p {
+        font-size: 12px;
+    }
+
+    .membership-card {
+        padding: 20px;
+    }
+
+    .membership-title {
+        font-size: 14px;
+    }
+
+    .membership-description {
+        font-size: 12px;
+    }
+
+    .btn-membership {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    .navbar-nav .nav-link {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+
+    .footer-content p {
+        font-size: 12px;
+    }
+
+    .footer-links a {
+        font-size: 11px;
+    }
+
+    .mt-5 {
+        margin-top: 2rem;
+    }
+
+    .mb-5 {
+        margin-bottom: 2rem;
+    }
+
+}
+
+/* Small Devices (Tablet Portrait) - 576px and up */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .profile-header {
+        height: 280px;
+    }
+
+    .profile-avatar {
+        width: 70px;
+        height: 70px;
+    }
+
+    .profile-name {
+        font-size: 24px;
+    }
+
+    .profile-message {
+        font-size: 13px;
+    }
+
+    .stat-card {
+        padding: 18px;
+    }
+
+    .stat-avatar {
+        width: 45px;
+        height: 45px;
+    }
+
+    .stat-name {
+        font-size: 13px;
+    }
+
+    .stat-value {
+        font-size: 22px;
+    }
+
+    .motivation-card {
+        padding: 25px;
+    }
+
+    .motivation-card h3 {
+        font-size: 19px;
+    }
+
+    .motivation-card p {
+        font-size: 13px;
+    }
+
+    .membership-card {
+        padding: 22px;
+    }
+
+    .membership-title {
+        font-size: 15px;
+    }
+
+    .membership-description {
+        font-size: 13px;
+    }
+
+    .btn-membership {
+        padding: 9px 18px;
+        font-size: 13px;
+    }
+}
+
+/* Medium Devices (Tablet Landscape) - 768px and up */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .container {
+        max-width: 750px;
+    }
+
+    .profile-header {
+        height: 300px;
+    }
+
+    .profile-avatar {
+        width: 75px;
+        height: 75px;
+    }
+
+    .profile-name {
+        font-size: 26px;
+    }
+
+    .stat-card {
+        padding: 20px;
+    }
+
+    .stat-avatar {
+        width: 50px;
+        height: 50px;
+    }
+
+    .stat-name {
+        font-size: 14px;
+    }
+
+    .stat-value {
+        font-size: 24px;
+    }
+
+    .motivation-card {
+        padding: 28px;
+    }
+
+    .motivation-card h3 {
+        font-size: 20px;
+    }
+
+    .membership-card {
+        padding: 25px;
+    }
+
+    .membership-title {
+        font-size: 16px;
+    }
+
+    .membership-description {
+        font-size: 14px;
+    }
+
+    .btn-membership {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+/* Large Devices (Desktop) - 992px and up */
+@media (min-width: 992px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    .profile-header {
+        height: 320px;
+    }
+
+    .profile-avatar {
+        width: 85px;
+        height: 85px;
+    }
+
+    .profile-name {
+        font-size: 28px;
+    }
+
+    .profile-message {
+        font-size: 14px;
+    }
+
+    .stat-card {
+        padding: 22px;
+    }
+
+    .stat-avatar {
+        width: 55px;
+        height: 55px;
+    }
+
+    .stat-name {
+        font-size: 15px;
+    }
+
+    .stat-value {
+        font-size: 26px;
+    }
+
+    .motivation-card {
+        padding: 30px;
+    }
+
+    .motivation-card h3 {
+        font-size: 22px;
+    }
+
+    .motivation-card p {
+        font-size: 15px;
+    }
+
+    .membership-card {
+        padding: 28px;
+    }
+
+    .membership-title {
+        font-size: 17px;
+    }
+
+    .membership-description {
+        font-size: 15px;
+    }
+
+    .btn-membership {
+        padding: 11px 22px;
+        font-size: 15px;
+    }
+}
+
+/* Extra Large Devices (Large Desktop) - 1200px and up */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1400px;
+    }
+
+    .profile-header {
+        height: 350px;
+    }
+
+    .profile-avatar {
+        width: 95px;
+        height: 95px;
+    }
+
+    .profile-name {
+        font-size: 32px;
+    }
+
+    .profile-message {
+        font-size: 15px;
+    }
+
+    .stat-card {
+        padding: 25px;
+    }
+
+    .stat-avatar {
+        width: 60px;
+        height: 60px;
+    }
+
+    .stat-name {
+        font-size: 16px;
+    }
+
+    .stat-value {
+        font-size: 28px;
+    }
+
+    .motivation-card {
+        padding: 35px;
+    }
+
+    .motivation-card h3 {
+        font-size: 24px;
+    }
+
+    .motivation-card p {
+        font-size: 16px;
+    }
+
+    .membership-card {
+        padding: 30px;
+    }
+
+    .membership-title {
+        font-size: 18px;
+    }
+
+    .membership-description {
+        font-size: 16px;
+    }
+
+    .btn-membership {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+}
+
+/* Orientation-specific styles */
+@media (orientation: landscape) and (max-height: 500px) {
+    .profile-header {
+        height: 200px;
+    }
+
+    .profile-avatar {
+        width: 50px;
+        height: 50px;
+    }
+
+    .profile-name {
+        font-size: 18px;
+    }
+
+    .profile-message {
+        font-size: 11px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background-color: white;
+    }
+
+    .navbar,
+    .footer-section,
+    .btn,
+    .cta-section {
+        display: none;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    .profile-card,
+    .stat-card,
+    .membership-card {
+        page-break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+}
+
+/* Accessibility - Prefers Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Dark Mode Support (if needed in future) */
+@media (prefers-color-scheme: dark) {
+    /* Can add dark mode styles here */
+}
