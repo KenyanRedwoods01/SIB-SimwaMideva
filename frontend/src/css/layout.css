@@ -1,0 +1,215 @@
+/* Layout CSS - Fourfront Management Investment Club */
+
+:root {
+    --primary-color: #d4a853; /* Foundation Gold */
+    --secondary-color: #6b8cae; /* Economy Blue */
+    --bg-dark: #1e1e1e;
+    --text-light: #ffffff;
+    --text-muted: #a0a0a0;
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.main-wrapper {
+    min-height: 100vh;
+}
+
+/* Profile Section */
+.profile-section {
+    padding-top: 2rem;
+}
+
+.profile-card {
+    background: #333;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.profile-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--primary-color);
+}
+
+.profile-name {
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.highlight-text {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+/* Members Section */
+.member-card {
+    padding: 1.25rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: var(--transition);
+    border: 1px solid transparent;
+}
+
+.member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.member-card.pink { background-color: #fce4ec; }
+.member-card.green { background-color: #e8f5e9; }
+.member-card.yellow { background-color: #fffde7; }
+.member-card.coral { background-color: #fff3e0; }
+
+.member-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.member-name {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #444;
+}
+
+.member-surname {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.member-amount {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-top: 0.5rem;
+}
+
+/* Recommendation Card */
+.recommendation-card {
+    background: #333;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.rec-title {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.rec-text {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* Membership Card */
+.membership-card {
+    background: white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.membership-card.foundation { border-left: 8px solid var(--primary-color); background: #333; color: white; }
+.membership-card.economy { border-left: 8px solid var(--secondary-color); background: #eee; }
+
+.membership-header {
+    padding: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.membership-title {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.membership-toggle {
+    transition: var(--transition);
+}
+
+.membership-toggle.rotated {
+    transform: rotate(180deg);
+}
+
+.membership-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: var(--transition);
+    padding: 0 1.25rem;
+}
+
+.membership-body.show {
+    max-height: 200px;
+    padding-bottom: 1.25rem;
+}
+
+.membership-description {
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
+/* CTA */
+.cta-link-wrapper {
+    background: var(--primary-color);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 2rem;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: var(--transition);
+}
+
+.cta-link-wrapper:hover {
+    background: #b88d3e;
+    transform: scale(1.02);
+}
+
+/* Footer */
+.app-footer {
+    padding: 1.5rem 0;
+    background: #f1f1f1;
+    border-top: 1px solid #ddd;
+}
+
+.footer-text {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+/* WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}

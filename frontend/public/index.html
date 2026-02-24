@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fourfront Management Investment Club">
+    <meta name="author" content="Simwa Mideva">
+    <title>Investment Club - Fourfront Management</title>
+    
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../src/css/bootstrap-overrides.css">
+    <link rel="stylesheet" href="../src/css/layout.css">
+    <link rel="stylesheet" href="../src/css/components.css">
+    <link rel="stylesheet" href="../src/css/responsive.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="bi bi-graph-up-arrow me-2 text-warning"></i>
+                Fourfront Management
+            </a>
+            <button class="navbar-toggler border-0" type="button" id="menuToggle" aria-label="Toggle navigation">
+                <i class="bi bi-list fs-2"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Members</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Memberships</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-wrapper">
+        <!-- Profile Section -->
+        <section class="profile-section">
+            <div class="container-fluid px-4">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="profile-card">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Michael&backgroundColor=d4a853" 
+                                     alt="Michael" 
+                                     class="profile-avatar">
+                                <h1 class="profile-name mb-0">Michael</h1>
+                            </div>
+                            <div class="profile-message">
+                                <p class="mb-0">You've officially joined your <span class="highlight-text">first investment knowledge club!</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Members Section -->
+        <section class="members-section py-4">
+            <div class="container-fluid px-4">
+                <div class="row g-3">
+                    <div class="col-6 col-sm-6 col-md-3">
+                        <div class="member-card pink" onclick="showMemberDetail('Benard', 350)">
+                            <div class="d-flex align-items-center gap-2 mb-2">
+                                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Benard&backgroundColor=f5d0d0" 
+                                     alt="Benard" 
+                                     class="member-avatar">
+                                <div>
+                                    <div class="member-name">Benard</div>
+                                    <div class="member-surname">Makodingo</div>
+                                </div>
+                            </div>
+                            <div class="member-amount">350</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3">
+                        <div class="member-card green" onclick="showMemberDetail('kigSmall', 225)">
+                            <div class="d-flex align-items-center gap-2 mb-2">
+                                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=kigSmall&backgroundColor=d4f5d0" 
+                                     alt="kigSmall" 
+                                     class="member-avatar">
+                                <div>
+                                    <div class="member-name">kigSmall</div>
+                                    <div class="member-surname">Foot</div>
+                                </div>
+                            </div>
+                            <div class="member-amount">225</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3">
+                        <div class="member-card yellow" onclick="showMemberDetail('Caroline', 117)">
+                            <div class="d-flex align-items-center gap-2 mb-2">
+                                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Caroline1&backgroundColor=f5f0d0" 
+                                     alt="Caroline" 
+                                     class="member-avatar">
+                                <div>
+                                    <div class="member-name">Caroline</div>
+                                    <div class="member-surname">Likhoi</div>
+                                </div>
+                            </div>
+                            <div class="member-amount">117</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3">
+                        <div class="member-card coral" onclick="showMemberDetail('Caroline', 321)">
+                            <div class="d-flex align-items-center gap-2 mb-2">
+                                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Caroline2&backgroundColor=f5d0d8" 
+                                     alt="Caroline" 
+                                     class="member-avatar">
+                                <div>
+                                    <div class="member-name">Caroline</div>
+                                    <div class="member-surname">Likhoi</div>
+                                </div>
+                            </div>
+                            <div class="member-amount">321</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recommendation Section -->
+        <section class="recommendation-section px-4 pb-4">
+            <div class="recommendation-card">
+                <h3 class="rec-title">Now let's make you great!</h3>
+                <p class="rec-text mb-0">
+                    You have shown us where you are doing well and where we can support you to be great! From your profile we recommend these memberships. Pick on that fits you best and start your financial adventure.
+                </p>
+            </div>
+        </section>
+
+        <!-- Membership Section -->
+        <section class="membership-section px-4 pb-4">
+            <!-- Foundation Membership -->
+            <div class="membership-card foundation mb-3" id="foundationCard">
+                <div class="membership-header" onclick="toggleMembership('foundation')">
+                    <span class="membership-title">FOUNDATION MEMBERSHIP</span>
+                    <i class="bi bi-chevron-down membership-toggle" id="foundationToggle"></i>
+                </div>
+                <div class="membership-body" id="foundationBody">
+                    <p class="membership-description mb-0">
+                        We invest for you, in shares and in the Mansa-X global fund. Service is free online with your personal representative, but service in the office may have extra charges.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Economy Membership -->
+            <div class="membership-card economy" id="economyCard">
+                <div class="membership-header" onclick="toggleMembership('economy')">
+                    <span class="membership-title">ECONOMY MEMBERSHIP</span>
+                    <i class="bi bi-chevron-down membership-toggle" id="economyToggle"></i>
+                </div>
+                <div class="membership-body" id="economyBody">
+                    <p class="membership-description mb-0">
+                        We will invest your money for you at a guaranteed rate, in the Mansa-X global fund. Service is free online with your personal representative, but service in the office may have extra charges.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section px-4 pb-5 text-center">
+            <div class="cta-link-wrapper" onclick="showDetails()">
+                <span class="cta-link-text">A closer look at the memberships details is available here</span>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+        <div class="container-fluid px-4">
+            <div class="footer-content text-center">
+                <span class="footer-text">Fourfront Management © 2025. All Rights Reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank" title="Contact us on WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!-- Member Modal -->
+    <div class="modal fade" id="memberModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Member Details</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center py-5">
+                    <div class="display-1 fw-bold text-warning mb-2" id="modalAmount">0</div>
+                    <p class="text-muted fs-5">Investment Points</p>
+                    <p class="fw-bold fs-3 mt-3 text-dark" id="modalName">Name</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Details Modal -->
+    <div class="modal fade" id="detailsModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Membership Details</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form id="detailsForm" novalidate>
+                        <div class="mb-3">
+                            <label for="userEmail" class="form-label fw-semibold">Email address</label>
+                            <input type="email" class="form-control form-control-lg" id="userEmail" placeholder="you@example.com" required>
+                            <div class="invalid-feedback">Please provide a valid email address.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="interestSelectHidden" class="form-label fw-semibold">Interested In</label>
+                            <div class="custom-select-wrapper">
+                                <div class="custom-select" id="customSelect">
+                                    <div class="custom-select-trigger" onclick="toggleCustomSelect()">
+                                        <span id="selectedOption">Choose membership...</span>
+                                        <i class="bi bi-chevron-down"></i>
+                                    </div>
+                                    <div class="custom-options" id="customOptions">
+                                        <div class="custom-option" data-value="foundation" onclick="selectOption('foundation', 'Foundation Membership')">
+                                            <span class="option-color foundation-dot"></span>
+                                            Foundation Membership
+                                        </div>
+                                        <div class="custom-option" data-value="economy" onclick="selectOption('economy', 'Economy Membership')">
+                                            <span class="option-color economy-dot"></span>
+                                            Economy Membership
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="hidden" id="interestSelect" required>
+                            </div>
+                            <div class="invalid-feedback">Please select a membership type.</div>
+                        </div>
+                        <button type="submit" class="btn btn-submit w-100 fw-bold">Submit Interest</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="../src/js/main.js"></script>
+</body>
+</html>
