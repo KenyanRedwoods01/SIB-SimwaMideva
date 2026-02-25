@@ -1,0 +1,19 @@
+# TruffleHog Configuration
+# Used by CodeRabbit to scan for leaked secrets and credentials
+
+# Detectors to enable/disable
+detectors:
+  - name: generic
+    enabled: true
+  - name: aws
+    enabled: true
+  - name: github
+    enabled: true
+
+# Exclude specific paths from scanning
+exclude_paths:
+  - vendor/**
+  - node_modules/**
+  - storage/framework/**
+  - storage/logs/**
+  - public/index.php
